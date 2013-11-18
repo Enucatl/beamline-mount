@@ -195,7 +195,7 @@ else
     case $os in
       Linux)
         #mntcmd="smbmount //${server}/${eid} ${mountdir} -o uid=${uid},gid=${egid},file_mode=${fmask},username=${eid},password=$password"
-	mntcmd="mount -t cifs -o uid=${uid},gid=${egid},file_mode=${fmask},username=${eid},password=$password //${server}/${eid} ${mountdir}"
+	mntcmd="mount -t cifs -o uid=${uid},gid=${egid},file_mode=${fmask},username=${eid},password=$password,sec=ntlm //${server}/${eid} ${mountdir}"
       echo $mntcmd
 	  ;;
       Darwin)
