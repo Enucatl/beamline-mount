@@ -2,7 +2,9 @@
 
 Easy installation:
 
-    :::bash
-    git clone https://Enucatl@bitbucket.org/psitomcat/scripts.git ~/bin/psitomcat_scripts
-    sudo ln -s ~/bin/psitomcat_scripts/blmount.sh /usr/bin/blmount
-    sudo ln -s ~/bin/psitomcat_scripts/ntmount.sh /usr/bin/ntmount
+```
+    git clone https://github.com/Enucatl/beamline-mount.git
+    cd beamline-mount
+    python setup.py
+    blmount --help
+```

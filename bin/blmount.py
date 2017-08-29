@@ -5,10 +5,10 @@ import subprocess
 @click.command()
 @click.option("--uid", default="1001")
 @click.option("--gid", default="1001")
-@click.option("--username")
-@click.option("--password")
-@click.option("--server")
-@click.option("--mountdir")
+@click.option("--username", help="e-account username")
+@click.option("--password", help="e-account password")
+@click.option("--server", help="network server X02DA")
+@click.option("--mountdir", help="local mount destination")
 def main(
         uid,
         gid,
