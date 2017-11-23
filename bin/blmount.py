@@ -16,7 +16,7 @@ def main(
         password,
         server,
         mountdir):
-    command = "sudo mount -t cifs -o uid={uid},gid={gid},username={username},password={password},sec=ntlm //{server}/{username} {mountdir}".format(
+    command = "sudo mount -t cifs -o uid={uid},gid={gid},username={username},password='{password}',sec=ntlm //{server}/{username} {mountdir}".format(
             uid=uid,
             gid=gid,
             username=username,
