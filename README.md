@@ -5,6 +5,7 @@ Easy installation:
 ```
     git clone https://github.com/Enucatl/beamline-mount.git
     cd beamline-mount
-    python setup.py
+    python setup.py develop
+    pyenv rehash
     blmount --help
 ```
